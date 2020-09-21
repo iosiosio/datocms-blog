@@ -1,15 +1,7 @@
-/* eslint-disable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid*/
-
-import React, { useState } from "react";
-import PropTypes from "prop-types";
-import { Link } from "gatsby";
-import { StaticQuery, graphql } from "gatsby";
-import { HelmetDatoCms } from "gatsby-source-datocms";
+import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Nav from '../components/Nav'
 import '../styles/style.css'
-
-import "../styles/index.sass";
 
 const duration = 0.5
 
@@ -56,5 +48,4 @@ const Layout = ({ children, location }) => (
   </>
 )
 
-export default Layout;
-/* eslint-enable jsx-a11y/anchor-has-content, jsx-a11y/anchor-is-valid*/
+export default Layout
