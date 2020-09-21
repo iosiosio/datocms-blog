@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import { motion } from 'framer-motion'
-import Heading from '../src/components'
 
 const transition = { duration: 0.3, ease: [0.43, 0.13, 0.23, 0.96] }
 
