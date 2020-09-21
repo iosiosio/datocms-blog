@@ -5,6 +5,9 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
+import { motion, AnimatePresence } from 'framer-motion'
+import Nav from '../components/Nav'
+import '../styles/style.css'
 
 import "../styles/index.sass";
 
