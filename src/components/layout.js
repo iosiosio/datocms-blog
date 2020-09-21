@@ -56,8 +56,6 @@ const Layout = ({ children, location }) => (
   </>
 )
 
-export default 
-
 const TemplateWrapper = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   return (
