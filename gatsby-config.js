@@ -14,5 +14,12 @@ module.exports = {
         apiToken: process.env.DATO_API_TOKEN,
       },
     },
+  `gatsby-plugin-page-transitions`,
+{
+  resolve: 'gatsby-plugin-page-transitions',
+  options: {
+    transitionTime: 500
+  }
+}
   ],
 }
