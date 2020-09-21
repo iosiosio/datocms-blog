@@ -11,34 +11,6 @@ import '../styles/style.css'
 
 import "../styles/index.sass";
 
-const duration = 0.5
-
-const variants = {
-  initial: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 1,
-    transition: {
-      duration: duration,
-      delay: duration,
-      when: 'beforeChildren',
-    },
-  },
-  exit: {
-    opacity: 0,
-    transition: { duration: duration },
-  },
-}
-      <AnimatePresence>
-        <motion.main
-          key={location.pathname}
-          variants={variants}
-          initial="initial"
-          animate="enter"
-          exit="exit"
-        >
-
 const TemplateWrapper = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -74,8 +46,7 @@ const TemplateWrapper = ({ children }) => {
           }
         }
       `}
-             </motion.main>
-      </AnimatePresence>
+
       render={data => (
         <div className={`container ${showMenu ? "is-open" : ""}`}>
           <HelmetDatoCms
