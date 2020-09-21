@@ -30,6 +30,14 @@ const variants = {
     transition: { duration: duration },
   },
 }
+      <AnimatePresence>
+        <motion.main
+          key={location.pathname}
+          variants={variants}
+          initial="initial"
+          animate="enter"
+          exit="exit"
+        >
 
 const TemplateWrapper = ({ children }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -66,6 +74,8 @@ const TemplateWrapper = ({ children }) => {
           }
         }
       `}
+             </motion.main>
+      </AnimatePresence>
       render={data => (
         <div className={`container ${showMenu ? "is-open" : ""}`}>
           <HelmetDatoCms
